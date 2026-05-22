@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.5" name="viewport"/>
+<title>Youth Farm Mission Centre Inc. – Rosthern, SK</title>
+<meta content="Youth Farm Mission Centre Inc. – Bible camps and corn maze in Rosthern, Saskatchewan. Faith, farming, and community grow together." name="description"/>
+<meta content="Youth Farm Mission Centre Inc." property="og:title"/>
+<meta content="Bible camps and corn maze in Rosthern, SK. Where faith, farming, and community grow together." property="og:description"/>
+<meta content="https://images.pexels.com/photos/35163995/pexels-photo-35163995.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Youth Farm Mission Centre Inc." name="twitter:title"/>
+<meta content="Bible camps and corn maze in Rosthern, SK. Where faith, farming, and community grow together." name="twitter:description"/>
+<meta content="https://images.pexels.com/photos/35163995/pexels-photo-35163995.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" name="twitter:image"/>
+<style>
+    :root {
+      --primary: #8B4513;
+      --secondary: #DAA520;
+      --accent: #FFD700;
+      --text: #2F1B0E;
+      --background: #FFF8DC;
+      --muted-background: #F5DEB3;
+      --heading-font: 'Merriweather', Georgia, serif;
+      --body-font: 'Open Sans', system-ui, -apple-system, sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--background);
+      color: var(--text);
+      font-family: var(--body-font);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: var(--heading-font);
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    a:hover {
+      color: var(--secondary);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    
+    .identity-strip {
+      background: var(--muted-background);
+      padding: 0.6rem 1.25rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.5rem 1rem;
+      font-size: 0.9rem;
+      border-bottom: 2px solid var(--primary);
+    }
+    .identity-strip .org-name {
+      font-weight: 700;
+      font-family: var(--heading-font);
+      color: var(--primary);
+      letter-spacing: 0.3px;
+    }
+    .identity-strip .proof-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.5rem;
+      align-items: center;
+    }
+    .identity-strip .proof-meta span {
+      background: rgba(139,69,19,0.06);
+      padding: 0.2rem 0.6rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+    }
+    .identity-strip .proof-meta a {
+      font-weight: 600;
+    }
+
+    
+    .site-header {
+      padding: 1rem 1.25rem 0.25rem;
+      background: var(--background);
+      border-bottom: 1px solid rgba(139,69,19,0.15);
+    }
+    .site-header h1 {
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--primary);
+      font-weight: 400;
+    }
+
+    
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr;
+      position: relative;
+      background: var(--muted-background);
+      margin-bottom: 0;
+    }
+    .hero-figure {
+      width: 100%;
+      height: 60vh;
+      min-height: 340px;
+      object-fit: cover;
+      display: block;
+      background: #b7a27b;
+    }
+    .hero-overlay {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      pointer-events: none;
+      background: linear-gradient(135deg, rgba(47,27,14,0.25) 0%, rgba(47,27,14,0.05) 70%);
+    }
+    .hero-text {
+      position: absolute;
+      bottom: 2rem;
+      left: 1.25rem;
+      right: 1.25rem;
+      max-width: 580px;
+      background: rgba(255,248,220,0.88);
+      padding: 1.5rem 1.8rem;
+      border-left: 6px solid var(--secondary);
+      box-shadow: 0 8px 24px rgba(47,27,14,0.12);
+      pointer-events: auto;
+    }
+    .hero-text h2 {
+      font-size: 1.9rem;
+      color: var(--primary);
+      margin-bottom: 0.4rem;
+    }
+    .hero-text p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      color: var(--text);
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      align-items: center;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--primary);
+      color: #fff;
+      font-family: var(--body-font);
+      font-weight: 600;
+      padding: 0.65rem 1.4rem;
+      border-radius: 40px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+      box-shadow: 0 2px 8px rgba(139,69,19,0.2);
+    }
+    .btn:hover {
+      background: var(--secondary);
+      color: var(--text);
+      transform: scale(1.02);
+    }
+    .btn-outline {
+      background: transparent;
+      border: 2px solid var(--primary);
+      color: var(--primary);
+      box-shadow: none;
+    }
+    .btn-outline:hover {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    
+    .proof-strip {
+      background: var(--background);
+      padding: 1.5rem 1.25rem;
+      border-bottom: 2px dashed var(--muted-background);
+    }
+    .proof-strip .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem 2.5rem;
+      align-items: baseline;
+    }
+    .proof-strip .proof-item {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.95rem;
+    }
+    .proof-strip .proof-item strong {
+      font-family: var(--heading-font);
+      color: var(--primary);
+    }
+
+    
+    section {
+      padding: 3rem 1.25rem;
+    }
+    .section-title {
+      font-size: 1.8rem;
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+      position: relative;
+      display: inline-block;
+    }
+    .section-title:after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: var(--secondary);
+      margin-top: 0.4rem;
+    }
+
+    
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    .about-text p {
+      margin-bottom: 1rem;
+    }
+    .about-text ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .about-text ul li {
+      padding: 0.3rem 0 0.3rem 1.8rem;
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="%23DAA520"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2z"/></svg>') left center no-repeat;
+      background-size: 1rem;
+    }
+    .about-collage {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.8rem;
+    }
+    .about-collage img {
+      border-radius: 4px;
+      object-fit: cover;
+      width: 100%;
+      height: 180px;
+      box-shadow: 0 4px 12px rgba(47,27,14,0.08);
+    }
+    .about-collage img:nth-child(1) { grid-column: 1 / 2; grid-row: 1 / 3; height: 100%; }
+    .about-collage img:nth-child(2) { grid-column: 2 / 3; }
+    .about-collage img:nth-child(3) { grid-column: 2 / 3; }
+
+    
+    .programs-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .program-card {
+      display: grid;
+      grid-template-columns: 1fr;
+      background: var(--muted-background);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(47,27,14,0.06);
+      border: 1px solid rgba(139,69,19,0.1);
+    }
+    .program-card:nth-child(even) {
+      direction: rtl;
+    }
+    .program-card:nth-child(even) .program-content {
+      direction: ltr;
+    }
+    .program-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .program-content {
+      padding: 1.5rem;
+      background: var(--background);
+    }
+    .program-content h3 {
+      color: var(--primary);
+      margin-bottom: 0.4rem;
+    }
+    .program-content p {
+      font-size: 0.95rem;
+    }
+
+    
+    .volunteer-section {
+      background: var(--muted-background);
+      padding: 0;
+      position: relative;
+    }
+    .volunteer-wrap {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    .volunteer-wrap img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+    .volunteer-cta {
+      padding: 2rem 1.25rem;
+      background: var(--primary);
+      color: #fff;
+      text-align: center;
+    }
+    .volunteer-cta h3 {
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem;
+    }
+    .volunteer-cta .btn {
+      background: var(--accent);
+      color: var(--text);
+      margin-top: 1rem;
+    }
+
+    
+    .donate-panel {
+      background: var(--muted-background);
+      border-radius: 20px;
+      padding: 2rem 1.8rem;
+      max-width: 640px;
+      margin: 0 auto;
+      border: 1px solid rgba(139,69,19,0.2);
+    }
+    .donate-panel h3 {
+      font-size: 1.8rem;
+      font-family: var(--heading-font);
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+    .donate-panel p {
+      margin-bottom: 1.2rem;
+    }
+    .donate-panel form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+    .donate-panel input, .donate-panel textarea {
+      padding: 0.7rem 1rem;
+      border: 1px solid var(--primary);
+      border-radius: 30px;
+      font-family: var(--body-font);
+      background: #fff;
+    }
+    .donate-panel textarea {
+      min-height: 80px;
+      resize: vertical;
+    }
+
+    
+    .contact-details {
+      background: var(--muted-background);
+      padding: 2rem 1.25rem;
+      border-top: 2px solid var(--primary);
+    }
+    .contact-details .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1rem 2rem;
+    }
+    .contact-details a {
+      font-weight: 600;
+    }
+    .contact-details .detail-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.8rem;
+    }
+    .gallery-grid img {
+      height: 160px;
+      object-fit: cover;
+      border-radius: 6px;
+      width: 100%;
+    }
+
+    
+    .next-steps {
+      background: var(--background);
+      border-top: 2px dashed var(--muted-background);
+    }
+    .steps-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 600px;
+    }
+    .step {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+    .step-num {
+      background: var(--secondary);
+      color: var(--text);
+      font-weight: 700;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    
+    .site-footer {
+      background: var(--primary);
+      color: #f0e6d2;
+      padding: 1.2rem 1.25rem;
+      font-size: 0.85rem;
+      text-align: center;
+    }
+    .site-footer a {
+      color: var(--accent);
+    }
+    .site-footer .attribution {
+      margin-top: 0.3rem;
+      opacity: 0.8;
+    }
+
+    
+    @media (min-width: 680px) {
+      .hero-text {
+        bottom: 3rem;
+        left: 3rem;
+        max-width: 520px;
+        padding: 2rem 2.2rem;
+      }
+      .hero-text h2 { font-size: 2.4rem; }
+      .about-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .program-card {
+        grid-template-columns: 1fr 1fr;
+      }
+      .program-card img {
+        height: 100%;
+        min-height: 220px;
+      }
+      .volunteer-wrap {
+        grid-template-columns: 1fr 1fr;
+      }
+      .volunteer-wrap img {
+        height: 100%;
+      }
+      .gallery-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .gallery-grid img {
+        height: 180px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-text h2 { font-size: 1.5rem; }
+      .hero-text { padding: 1rem 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="identity-strip">
+<span class="org-name">Youth Farm Mission Centre Inc.</span>
+<div class="proof-meta">
+<span>📍 Rosthern, SK</span>
+<span>🌾 Bible camps · corn maze</span>
+<a href="http://www.yfbc.ca" rel="noopener" target="_blank">yfbc.ca</a>
+</div>
+</div>
+<header class="site-header">
+<h1>Youth Farm Mission Centre Inc.</h1>
+</header>
+<div class="hero">
+<img alt="Golden hour corn maze prairie sky" class="hero-figure" height="800" src="https://images.pexels.com/photos/35163995/pexels-photo-35163995.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+<div class="hero-overlay"></div>
+<div class="hero-text">
+<h2>Growing Faith, Harvesting Hope</h2>
+<p>Youth Farm Mission Centre – Bible camps and corn maze in Rosthern, SK.</p>
+<div class="hero-actions">
+<a class="btn" href="#programs">Explore Our Programs</a>
+<a class="btn btn-outline" href="http://www.yfbc.ca" rel="noopener" target="_blank">Check Source Record</a>
+</div>
+</div>
+</div>
+<div class="proof-strip">
+<div class="container">
+<div class="proof-item"><strong>🌻</strong> Serving Rosthern &amp; surrounding areas, Saskatchewan</div>
+<div class="proof-item"><strong>📖</strong> Faith-based camps · agritourism</div>
+<div class="proof-item"><strong>🧭</strong> <a href="http://www.yfbc.ca" rel="noopener" target="_blank">View original site →</a></div>
+</div>
+</div>
+<section id="about">
+<div class="container">
+<h2 class="section-title">Field Notes</h2>
+<div class="about-grid">
+<div class="about-text">
+<p>Youth Farm Mission Centre Inc. is a nonprofit organization in Rosthern, Saskatchewan, dedicated to providing Bible camps and a seasonal corn maze that bring together faith, farming, and community. Our mission is to create a welcoming space where youth and families can grow spiritually and connect with the land.</p>
+<ul>
+<li>Rooted in the Rosthern community for generations.</li>
+<li>Unique combination of faith-based camps and agritourism.</li>
+<li>Hands-on farm experience for all ages.</li>
+</ul>
+</div>
+<div class="about-collage">
+<img alt="Group of children holding hands outdoors" height="800" src="https://images.pexels.com/photos/10043511/pexels-photo-10043511.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+<img alt="Red barn with white trim" height="800" src="https://images.pexels.com/photos/37064635/pexels-photo-37064635.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+<img alt="Children playing tug-of-war" height="800" src="https://images.pexels.com/photos/8034584/pexels-photo-8034584.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+</div>
+</div>
+</div>
+</section>
+<section id="programs">
+<div class="container">
+<h2 class="section-title">Program Snapshot</h2>
+<div class="programs-list">
+<div class="program-card">
+<img alt="Teenagers around a campfire at dusk" height="800" src="https://images.pexels.com/photos/36729452/pexels-photo-36729452.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+<div class="program-content">
+<h3>Bible Camp Programs</h3>
+<p>Summer and year-round camps for youth, centered on faith and outdoor activities.</p>
+</div>
+</div>
+<div class="program-card">
+<img alt="Family walking through a corn maze laughing" height="800" src="https://images.pexels.com/photos/4939810/pexels-photo-4939810.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+<div class="program-content">
+<h3>Corn Maze Experience</h3>
+<p>Seasonal corn maze open to the community for family fun and group events.</p>
+</div>
+</div>
+<div class="program-card">
+<img alt="Volunteer planting sunflower seedlings" height="800" src="https://images.pexels.com/photos/7475304/pexels-photo-7475304.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+<div class="program-content">
+<h3>Volunteer Opportunities</h3>
+<p>Join us in maintaining the farm, leading camps, or guiding maze visitors.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="volunteer-section">
+<div class="volunteer-wrap">
+<img alt="Hands holding a wooden cross" height="800" src="https://images.pexels.com/photos/826753/pexels-photo-826753.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+<div class="volunteer-cta">
+<h3>Support Our Mission</h3>
+<p>Donations help fund camp scholarships and farm upkeep.</p>
+<a class="btn" href="#donate">Give today</a>
+</div>
+</div>
+</div>
+<section id="donate">
+<div class="container">
+<div class="donate-panel">
+<h3>🌻 Harvest Gift</h3>
+<p>Your contribution helps keep camps accessible and the farm thriving. No amount is too small.</p>
+<form action="mailto:info@yfbc.ca" enctype="text/plain" method="post">
+<input name="name" placeholder="Your name" required="" type="text"/>
+<input name="email" placeholder="Email address" required="" type="email"/>
+<textarea name="message" placeholder="I'd like to support… (camp scholarship, farm upkeep, general)"></textarea>
+<button class="btn" type="submit">Send donation inquiry</button>
+</form>
+</div>
+</div>
+</section>
+<section>
+<div class="container">
+<h2 class="section-title">Farm &amp; Camp Scenes</h2>
+<div class="gallery-grid">
+<img alt="Hay bales on the field" height="800" src="https://images.pexels.com/photos/18028124/pexels-photo-18028124.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+<img alt="Sunset over wheat field" height="800" src="https://images.pexels.com/photos/12751723/pexels-photo-12751723.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+</div>
+</div>
+</section>
+<section class="next-steps">
+<div class="container">
+<h2 class="section-title">What happens next</h2>
+<div class="steps-list">
+<div class="step"><span class="step-num">1</span> <span>Reach out using the contact details below or the form above.</span></div>
+<div class="step"><span class="step-num">2</span> <span>Tell us about your interest: programs, donations, or volunteering.</span></div>
+<div class="step"><span class="step-num">3</span> <span>We’ll confirm the best next step – no pressure, just plain conversation.</span></div>
+</div>
+</div>
+</section>
+<div class="contact-details">
+<div class="container">
+<div class="detail-item"><strong>📞</strong> <a href="tel:+13062325133">(306) 232-5133</a></div>
+<div class="detail-item"><strong>✉️</strong> <a href="mailto:info@yfbc.ca">info@yfbc.ca</a></div>
+<div class="detail-item"><strong>📍</strong> PO BOX 636, ROSTHERN, SK</div>
+</div>
+</div>
+<footer class="site-footer">
+<div>© <span id="year"></span> Youth Farm Mission Centre Inc.</div>
+<div class="attribution">
+    Photos: <a href="https://www.pexels.com/photo/vast-cornfield-stretching-to-the-horizon-35163995/" target="_blank">Andrew Swarga</a>,
+    <a href="https://www.pexels.com/photo/students-holding-hands-on-the-grass-10043511/" target="_blank">Weadd</a>,
+    <a href="https://www.pexels.com/photo/friends-enjoying-campfire-with-guitar-at-night-36729452/" target="_blank">Vitaly Gariev</a>,
+    <a href="https://www.pexels.com/photo/family-walking-together-outdoors-4939810/" target="_blank">Nataliya Vaitkevich</a>,
+    <a href="https://www.pexels.com/photo/man-in-blue-crew-neck-t-shirt-holding-green-plant-7475304/" target="_blank">Mikhail Nilov</a>,
+    <a href="https://www.pexels.com/photo/grayscale-photography-of-person-holding-rosary-826753/" target="_blank">Ellen Mae Pacquiao</a>,
+    <a href="https://www.pexels.com/photo/traditional-red-barn-in-swedish-countryside-37064635/" target="_blank">Efrem Efre</a>,
+    <a href="https://www.pexels.com/photo/a-group-of-boys-playing-a-tug-of-war-8034584/" target="_blank">RDNE Stock project</a>,
+    <a href="https://www.pexels.com/photo/hay-bales-on-the-field-18028124/" target="_blank">Deneen L Treble</a>,
+    <a href="https://www.pexels.com/photo/a-grassy-field-during-sunset-12751723/" target="_blank">Darya Grey_Owl</a> · Pexels
+  </div>
+<div><a href="http://www.yfbc.ca" rel="noopener" target="_blank">Original site → yfbc.ca</a></div>
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
